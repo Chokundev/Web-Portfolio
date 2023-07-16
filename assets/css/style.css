@@ -486,7 +486,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -745,6 +745,11 @@ section {
 .portfolio-details {
   padding-top: 40px;
 }
+
+/* .swiper-slide {
+  align-items: center;
+} */
+
 
 .portfolio-details .portfolio-details-slider img {
   width: 50%;
