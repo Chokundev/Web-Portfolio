@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase Project - Webpage with Image Slider</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slide {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-2xl font-semibold text-center">Showcase Project: Project Name</h1>
+  </header>
+
+  <main class="container mx-auto mt-8 p-4">
+    <div class="relative">
+      <div class="carousel">
+        <div class="slide">
+          <img src="screenshot1.jpg" alt="Slide 1" class="w-full rounded-lg">
+        </div>
+        <div class="slide">
+          <img src="screenshot2.jpg" alt="Slide 2" class="w-full rounded-lg">
+        </div>
+        <div class="slide">
+          <img src="screenshot3.jpg" alt="Slide 3" class="w-full rounded-lg">
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 px-4 py-2 rounded-md">Previous</button>
+      <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 px-4 py-2 rounded-md">Next</button>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold">About the Project</h2>
+      <p class="mt-2">A brief description of the project goes here. This is where you can explain the purpose, features, and goals of the project.</p>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold">Technologies Used</h2>
+      <ul class="list-disc list-inside mt-2">
+        <li>Technology 1</li>
+        <li>Technology 2</li>
+        <li>Technology 3</li>
+        <!-- Add more technologies as needed -->
+      </ul>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md">Demo Website</a>
+    </div>
+
+    <div class="mt-8 flex justify-between">
+      <button id="prevProjectBtn" class="bg-gray-300 px-4 py-2 rounded-md">Previous Project</button>
+      <button id="nextProjectBtn" class="bg-gray-300 px-4 py-2 rounded-md">Next Project</button>
+    </div>
+  </main>
+
+  <footer class="bg-gray-200 text-center py-4 mt-8">
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevSlideBtn = document.getElementById('prevBtn');
+    const nextSlideBtn = document.getElementById('nextBtn');
+    const prevProjectBtn = document.getElementById('prevProjectBtn');
+    const nextProjectBtn = document.getElementById('nextProjectBtn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.style.display = 'none');
+      slides[index].style.display = 'block';
+    }
+
+    function prevSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+      showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+      showSlide(currentSlide);
+    }
+
+    prevSlideBtn.addEventListener('click', prevSlide);
+    nextSlideBtn.addEventListener('click', nextSlide);
+
+    // You can add logic for the "Previous Project" and "Next Project" buttons here
+    prevProjectBtn.addEventListener('click', () => {
+      // Logic to go to the previous project
+    });
+
+    nextProjectBtn.addEventListener('click', () => {
+      // Logic to go to the next project
+    });
+
+    showSlide(currentSlide);
+  </script>
+
+</body>
+</html>
