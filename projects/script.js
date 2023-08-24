@@ -17,3 +17,4 @@ const slides = document.querySelectorAll('.slide');
     setInterval(nextSlide, 2000); // Change slide every 3 seconds
 
     showSlide(currentSlide);
+
