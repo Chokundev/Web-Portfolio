@@ -1,83 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50 antialiased __variable_20951f">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project ระบบสายตรงคณะกรรมการนักเรียน</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="/projects/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" data-precedence="next">
+    <title>ระบบสายตรงถึง คกก.นร.</title>
+    <meta name="ระบบสายตรงถึงคณะกรรมการนักเรียน">
 </head>
-<body class="bg-gray-100">
 
-  <header class="bg-blue-500 text-white p-4">
-    
-    <h1 class="text-2xl font-semibold text-center">
-      โปรเจคต์ : เว็บไซต์สายตรงคณะกรรมการนักเรียน</h1>
-  </header>
-  
-  <main class="container mx-auto mt-8 p-4">
-    <div class="relative">
-      <center>
-        <div class="carousel">
-          <div class="slide">
-            <img src="/projects/img/direct1.jpg" alt="Slide 1" class="rounded-lg " width="60%">
-          </div>
-          
-          <!-- Add more slides as needed -->
-        </div></center>
-      
-      </div>
+<body class="flex h-full flex-col">
+    <div class="flex min-h-full flex-col">
+        <header>
+            <nav>
+                <div class="bg-white p-4 flex items-center flex-wrap">
+                    <ul class="flex items-center">
 
-    <div class="mt-8">
-      <h2 class="text-xl font-semibold">เกี่ยวกับโปรเจคต์</h2>
-      <p class="mt-2">โปรเจคต์นี้จัดทำขึ้นเพื่อช่วยบริหารจัดการโครงการห้องเรียนสีขาว ลดการใช้กระดาษใน
-        การตรวจห้องเรียน นำเทคโนโลยีมาปรับใช้เพื่อลดภาระงานของคณะกรรมการนักเรียน , ระบบบันทึกข้อมูลพัฒนาบน Google App Script เก็บฐานข้อมูลบน Google Sheet</p>
+                        <li class="inline-flex items-center">
+                            <a href="#" class="text-gray-600 hover:text-blue-500">
+                                <svg class="w-5 h-auto fill-current mx-2 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="inline-flex items-center">
+                            <a href="/index.html" class="text-gray-600 hover:text-blue-500">หน้าหลัก</a>
+                            <svg class="w-5 h-auto fill-current mx-2 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                            </svg>
+                        </li>
+
+                        <li class="inline-flex items-center">
+                            <a href="/projects/index.html" class="text-gray-600 hover:text-blue-500">ผลงาน</a>
+                            <svg class="w-5 h-auto fill-current mx-2 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                            </svg>
+                        </li>
+
+                        <li class="inline-flex items-center">
+                            <a href="#" class="text-gray-600 hover:text-blue-500 text-blue-500">
+                                ระบบสายตรงถึง คกก.นร.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="flex-auto">
+            <div class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
+                        <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+                            <h1 class="text-4xl font-medium tracking-tight text-gray-900">ระบบสายตรงถึงคณะกรรมการนักเรียน</h1>
+                            <p class="mt-6 text-lg text-gray-600">โปรเจคต์นี้เป็นโปรเจคต์เล็กๆครับ ผมพัฒนาขึ้นเพื่อให้พี่ๆน้องๆในโรงเรียนส่งคำถามหรือความในใจที่อยากจะบอกกับคณะกรรมการนักเรียน หรืออยากจะขอเพลงให้เปิดในช่วงเช้าก็สามารถขอมาได้ผ่านช่องทางนี้ได้ทั้งหมดเลย
+                            </p>
+
+                            <div class="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+                                <a href="https://direct.bn-sc.cloud">
+                                    <button type="button"
+                                        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
+                                        👆 ไปที่เว็บไซต์
+                                    </button></a>
+
+                                <a href="https://github.com/Chokundev/direct-bn-sc">
+                                    <button type="button"
+                                        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
+                                        <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        ไปที่ Github
+                                    </button></a>
+                            </div>
+
+                        </div>
+
+                        <div class="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+
+                            <!-- Background  -->
+                            <div
+                                class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
+                                <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true"
+                                    class="absolute inset-0 h-full w-full animate-spin-slow">
+                                    <path
+                                        d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z"
+                                        stroke="#D4D4D4" stroke-opacity="0.7"></path>
+                                    <path d="M513 1025C230.23 1025 1 795.77 1 513" stroke="url(#:S2:-gradient-1)"
+                                        stroke-linecap="round"></path>
+                                    <defs>
+                                        <linearGradient id=":S2:-gradient-1" x1="1" y1="513" x2="1" y2="1025"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#06b6d4"></stop>
+                                            <stop offset="1" stop-color="#06b6d4" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg><svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true"
+                                    class="absolute inset-0 h-full w-full animate-spin-reverse-slower">
+                                    <path
+                                        d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z"
+                                        stroke="#D4D4D4" stroke-opacity="0.7"></path>
+                                    <path d="M913 513c0 220.914-179.086 400-400 400" stroke="url(#:S2:-gradient-2)"
+                                        stroke-linecap="round"></path>
+                                    <defs>
+                                        <linearGradient id=":S2:-gradient-2" x1="913" y1="513" x2="913" y2="913"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#06b6d4"></stop>
+                                            <stop offset="1" stop-color="#06b6d4" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div> <!-- End Background  -->
+
+                            <div
+                                class="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-bottom-20 lg:-top-10 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
+                                <div class="relative aspect-[366/729] mx-auto max-w-[366px]">
+                                    <div
+                                        class="absolute inset-y-[calc(1/729*100%)] left-[calc(7/729*100%)] right-[calc(5/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl">
+                                    </div>
+                                    <div
+                                        class="absolute left-[calc(23/366*100%)] top-[calc(23/729*100%)] grid h-[calc(686/729*100%)] w-[calc(318/366*100%)] transform grid-cols-1 overflow-hidden bg-gray-900 pt-[calc(23/318*100%)]">
+
+                                       
+
+                                    </div><svg viewBox="0 0 366 729" aria-hidden="true"
+                                        class="pointer-events-none absolute inset-0 h-full w-full fill-gray-100">
+                                        <path fill="#F2F2F2" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M300.092 1c41.22 0 63.223 21.99 63.223 63.213V184.94c-.173.184-.329.476-.458.851.188-.282.404-.547.647-.791.844-.073 2.496.257 2.496 2.157V268.719c-.406 2.023-2.605 2.023-2.605 2.023a7.119 7.119 0 0 1-.08-.102v394.462c0 41.213-22.001 63.212-63.223 63.212h-95.074c-.881-.468-2.474-.795-4.323-.838l-33.704-.005-.049.001h-.231l-.141-.001c-2.028 0-3.798.339-4.745.843H66.751c-41.223 0-63.223-21.995-63.223-63.208V287.739c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 284.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-16.289c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 214.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-26.041a2.26 2.26 0 0 0 .093-.236l-.064-.01a3.337 3.337 0 0 1-.72-.12l-.166-.028A2 2 0 0 1 1 135.62v-24.611a2 2 0 0 1 1.671-1.973l.857-.143v-44.68C3.528 22.99 25.53 1 66.75 1h233.341ZM3.952 234.516a5.481 5.481 0 0 0-.229-.278c.082.071.159.163.228.278Zm89.99-206.304A4.213 4.213 0 0 0 89.727 24H56.864C38.714 24 24 38.708 24 56.852v618.296C24 693.292 38.714 708 56.864 708h250.272c18.15 0 32.864-14.708 32.864-32.852V56.852C340 38.708 325.286 24 307.136 24h-32.864a4.212 4.212 0 0 0-4.213 4.212v2.527c0 10.235-8.3 18.532-18.539 18.532H112.48c-10.239 0-18.539-8.297-18.539-18.532v-2.527Z">
+                                        </path>
+                                        <rect x="154" y="29" width="56" height="5" rx="2.5" fill="#D4D4D4"></rect>
+                                    </svg>
+                                    <img alt="" fetchpriority="high" width="366" height="729" decoding="async"
+                                        data-nimg="1" class="pointer-events-none absolute inset-0 h-full w-full"
+                                        style="color:transparent" src="images/mockup.svg">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
+                            <p class="text-center text-sm font-semibold text-gray-900 lg:text-left">
+                                เทคโนโลยี/ภาษาที่ใช้พัฒนา</p>
+                            <ul role="list"
+                                class="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
+                                <li class="flex"><img alt="html" loading="lazy" width="80" height="100" decoding="async"
+                                        data-nimg="1" style="color:transparent" src="images/html-5-logo.svg"></li>
+
+                                <li class="flex"><img alt="css" loading="lazy" width="80" height="100" decoding="async"
+                                        data-nimg="1" style="color:transparent" src="images/css-3.svg"></li>
+
+                                <li class="flex"><img alt="Wired" loading="lazy" width="80" height="100"
+                                        decoding="async" data-nimg="1" style="color:transparent" src="images/js.svg">
+                                </li>
+
+                                <li class="flex"><img alt="bootstrap" loading="lazy" width="80" height="100"
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        src="./images/bootstrap.svg"></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <section id="features" aria-label="Features" class="bg-gray-900 py-20 sm:py-32">
+
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
+                        <h2 class="text-3xl font-medium tracking-tight text-white">ระบบภายในเว็บไซต์</h2>
+                        <p class="mt-2 text-lg text-gray-400">ระบบทั้งหมดนี้ถูกสร้างขึ้นเพื่อลดภาระในการทำงาน
+                            </p>
+                    </div>
+                </div>
+
+
+
+                <!-- ขนาดหน้าจอโทรศัพท์ -->
+                <div class="mt-16 md:hidden">
+                    <div
+                        class="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] sm:-space-x-6 [&amp;::-webkit-scrollbar]:hidden">
+
+                        <div class="w-full flex-none snap-center px-4 sm:px-6">
+                            <div class="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
+                                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"><svg
+                                        viewBox="0 0 558 558" width="558" height="558" fill="none" aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id=":Rapaqlla:" x1="79" y1="16" x2="105" y2="237"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#13B5C8"></stop>
+                                                <stop offset="1" stop-color="#13B5C8" stop-opacity="0"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path opacity=".2"
+                                            d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
+                                            stroke="#13B5C8"></path>
+                                        <path d="M1 279C1 125.465 125.465 1 279 1" stroke="url(#:Rapaqlla:)"
+                                            stroke-linecap="round"></path>
+                                    </svg></div>
+                                <div class="relative aspect-[366/729] relative mx-auto w-full max-w-[366px]">
+                                    <div
+                                        class="absolute inset-y-[calc(1/729*100%)] left-[calc(7/729*100%)] right-[calc(5/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl">
+                                    </div>
+
+                                    <img alt="" loading="lazy" width="366" height="729" decoding="async" data-nimg="1"
+                                        class="pointer-events-none absolute inset-0 h-full w-full"
+                                        style="color:transparent" src="./images/mockup.svg">
+                                </div>
+                                <div class="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur sm:p-10">
+                                    <h3 class="mt-6 text-sm font-semibold text-white sm:text-lg">ระบบส่งข้อความ</h3>
+                                    <p class="mt-2 text-sm text-gray-400">ใช้สำหรับส่งข้อความ มีระบบ Line Notify เมื่อมีข้อความเข้ามาใหม่ สามารถดูข้อมูลย้อนหลังได้ผ่านระบบฐานข้อมูล</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--------------------------------------------------------------------------------------------------------->
+
+                        
+
+
+                        <!--------------------------------------------------------------------------------------------------------->
+
+
+
+                     
+
+
+
+                    </div>
+
+                    <div class="mt-6 flex justify-center gap-3"><button type="button"
+                            class="relative h-0.5 w-4 rounded-full bg-gray-300" aria-label="Go to slide 1"><span
+                                class="absolute -inset-x-1.5 -inset-y-3"></span></button>
+                    </div>
+
+                </div>
+
+                <!--จบ  ขนาดหน้าจอโทรศัพท์ -->
+
+
+                <!-- ขนาดหน้าจอคอม -->
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden md:mt-20 md:block">
+                    <button type="button" aria-hidden="true"
+                        style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0"></button>
+                    <div class="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24">
+
+                        <div class="relative z-10 order-last col-span-6 space-y-6" role="tablist"
+                            aria-orientation="vertical">
+                            <div class="relative rounded-2xl transition-colors hover:bg-gray-800/30">
+                                <div class="absolute inset-0 bg-gray-800" style="border-radius:16px"></div>
+
+                                <div class="relative z-10 p-8">
+
+                                    <h3 class="mt-6 text-lg font-semibold text-white">
+                                        <button onclick="btn1()" class="text-left ui-not-focus-visible:outline-none"
+                                            id="headlessui-tabs-tab-:Rabdaqlla:" role="tab" type="button"
+                                            aria-selected="true" tabindex="0" data-headlessui-state="selected">
+                                            <span class="absolute inset-0 rounded-2xl"></span>ระบบส่งข้อความ</button>
+                                    </h3>
+                                    <p class="mt-2 text-sm text-gray-400">ใช้สำหรับส่งข้อความ มีระบบ Line Notify เมื่อมีข้อความเข้ามาใหม่ สามารถดูข้อมูลย้อนหลังได้ผ่านระบบฐานข้อมูล</p>
+                                </div>
+                            </div>
+
+                            
+
+
+
+                        </div>
+
+                        <div class="relative col-span-6">
+
+                            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"><svg
+                                    viewBox="0 0 558 558" width="558" height="558" fill="none" aria-hidden="true"
+                                    class="animate-spin-slower">
+                                    <defs>
+                                        <linearGradient id=":Rddaqlla:" x1="79" y1="16" x2="105" y2="237"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#13B5C8"></stop>
+                                            <stop offset="1" stop-color="#13B5C8" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path opacity=".2"
+                                        d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
+                                        stroke="#13B5C8"></path>
+                                    <path d="M1 279C1 125.465 125.465 1 279 1" stroke="url(#:Rddaqlla:)"
+                                        stroke-linecap="round"></path>
+                                </svg>
+                            </div>
+
+
+                            <div class="relative aspect-[366/729] z-10 mx-auto w-full max-w-[366px]">
+                                <div
+                                    class="absolute inset-y-[calc(1/729*100%)] left-[calc(7/729*100%)] right-[calc(5/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl">
+                                </div>
+
+                                <img alt="" loading="lazy" width="366" height="729" decoding="async" data-nimg="1"
+                                    class="pointer-events-none absolute inset-0 h-full w-full" id="img"
+                                    src="./images/mockup.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--จบ  ขนาดหน้าจอคอม -->
+
+            </section>
+
+        </main>
+        <footer class="border-t border-gray-200">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div
+                    class="flex flex-col items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
+                    <div>
+                        <div class="flex items-center text-gray-900">
+
+
+                            <div class="ml-4">
+                                <p class="text-base font-semibold">ระบบสายตรงถึงคณะกรรมการนักเรียน</p>
+                                <p class="mt-1 text-sm">พัฒนาโดย : ธีรชานนท์ พวงเงิน</p>
+                            </div>
+                        </div>
+                        <nav class="mt-11 flex gap-8">
+                            <a class="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
+                                href="#"><span class="relative z-10">ภาพรวม</span></a>
+                            <a class="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
+                                href="/#features"><span class="relative z-10">ระบบภายในเว็บไซต์</span></a>
+
+                        </nav>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
+                    <p class="mt-6 text-sm text-gray-500 md:mt-0">2023 &copy; Copyright
+                        <strong><span>Chokun.co</span></strong>. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="mt-8">
-        <h2 class="text-xl font-semibold">ระบบในเว็บไซต์</h2>
-        <ul class="list-disc list-inside mt-2">
-          <li>ระบบบันทึกข้อมูล</li>
-          <li>ระบบแจ้งเตือนเมื่อมีคนส่งข้อความ (Line Notify)</li>
-          <!-- Add more technologies as needed -->
-        </ul>
-      </div>
-
-    <div class="mt-8">
-      <h2 class="text-xl font-semibold">เทคโนโลยี/ภาษาที่ใช้พัฒนา</h2>
-      <ul class="list-disc list-inside mt-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS Script</li>
-        <li>Bootstrap5</li>
-        <li>Tailwind CSS</li>
-        <li>Sweetalert2</li>
-        <!-- Add more technologies as needed -->
-      </ul>
-    </div>
-
-    <div class="mt-8 text-center">
-      <a href="https://direct.bn-sc.cloud" class="bg-blue-500 text-white px-4 py-2 rounded-md">👆 ไปที่เว็บไซต์</a>
-      <a href="https://github.com/Chokundev/direct-bn-sc" class="bg-blue-500 text-white px-4 py-2 rounded-md"><i class="fab fa-github"></i> Github</a>
-      
-    </div>
-
-    <div class="mt-8 flex justify-between">
-      <a href="/projects/advertise/index.html">
-        <button class="bg-gray-300 px-4 py-2 rounded-md"> 👈 ก่อนหน้า</button>
-      </a>
-      <a href="/projects/esport/index.html">
-        <button class="bg-gray-300 px-4 py-2 rounded-md">ถัดไป 👉</button>
-      </a>
-      
-    </div>
-  </main>
-
-  <footer class="bg-gray-200 text-center py-4 mt-8">
-    <p>&copy; 2023 chokun.co. All rights reserved.</p>
-  </footer>
-
-  <script src="/projects/script.js"></script>
 </body>
+<script src="./js/script.js"></script>
+
 </html>
