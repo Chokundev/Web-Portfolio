@@ -7,15 +7,55 @@
     <title>ตัดต่อรายการวิทยุ FM 103 MHz</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/projects/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="bg-gray-100">
 
-    <header class="bg-blue-500 text-white p-4">
+    <header>
+        <nav>
+            <div class="bg-white p-4 flex items-center flex-wrap">
+                <ul class="flex items-center">
 
-        <h1 class="text-2xl font-semibold text-center">
-            ตัดต่อรายการวิทยุ FM 103 MHz</h1>
+                    <li class="inline-flex items-center">
+                        <a href="#" class="text-gray-600 hover:text-blue-500">
+                            <svg class="w-5 h-auto fill-current mx-2 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="inline-flex items-center">
+                        <a href="/index.html" class="text-gray-600 hover:text-blue-500">หน้าหลัก</a>
+                        <svg class="w-5 h-auto fill-current mx-2 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                        </svg>
+                    </li>
+
+                    <li class="inline-flex items-center">
+                        <a href="/projects/index.html" class="text-gray-600 hover:text-blue-500">ผลงาน</a>
+                        <svg class="w-5 h-auto fill-current mx-2 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                        </svg>
+                    </li>
+
+                    <li class="inline-flex items-center">
+                        <a href="#" class="text-gray-600 hover:text-blue-500 text-blue-500">
+                            ตัดต่อรายการวิทยุ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main class="container mx-auto mt-8 p-4">
@@ -47,26 +87,40 @@
             </ul>
         </div>
 
-        <div class="mt-8 text-center">
+
+
+        <div class="mt-8 mb-8 text-center">
             <a href="https://bit.ly/fm-103" class="bg-blue-500 text-white px-4 py-2 rounded-md">👆 ผลงานทั้งหมด</a>
         </div>
 
-        <div class="mt-8 flex justify-between">
-            <a href="/projects/index.html">
-                <button class="bg-gray-300 px-4 py-2 rounded-md"> 🏠 กลับหน้าหลัก</button>
-            </a>
-            <a href="/projects/clip/index.html">
-                <button class="bg-gray-300 px-4 py-2 rounded-md">ถัดไป 👉</button>
-            </a>
-
+        <div class="container-audio">
+            <h6 class="mb-4 text-center">ตัวอย่างรายการศาสตร์แห่งธรรมะพระราชา</h6>
+            <audio controls>
+                       <source src="./audio/ธรรมมะพระราขา พุธ 2 สค 66.mp3">
+                       Your browser dose not Support the audio Tag
+            </audio>
         </div>
+
+        <div class="container-audio">
+            <h6 class="mb-4 text-center">ตัวอย่างรายการรู้รักสามัคคี ฯ</h6>
+            <audio controls>
+                       <source src="./audio/รู้รัก  จันทร์ 31  ก ค 66.mp3">
+                       Your browser dose not Support the audio Tag
+            </audio>
+        </div>
+
+          
+        </div>
+
+
     </main>
 
     <footer class="bg-gray-200 text-center py-4 mt-8">
         <p>&copy; 2023 chokun.co. All rights reserved.</p>
     </footer>
 
-    <script src="/projects/script.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

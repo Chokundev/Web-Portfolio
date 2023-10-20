@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+* {
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+
+h2 , p , li{
+    color: black;
+}
+
+
+.container-audio {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+audio {
+    width: 100%;
+}
