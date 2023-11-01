@@ -11,3 +11,7 @@ function btn2(){
 function btn3(){
     document.getElementById("img").src = "./images/3.svg" ;
 }
+
+function btn4(){
+    document.getElementById("img").src = "./images/4.svg" ;
+}
